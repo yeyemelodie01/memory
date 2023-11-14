@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Memory</title>
 
-    <link rel="stylesheet" href="sass/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/components/buttons.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,32 +16,48 @@
   </head>
   <body>
     <header>
-      <nav>
-        <h1>ENI - <strong>MEMORY</strong> - <p id="nav_page"></p></h1>
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="signin.html">S'inscrire</a></li>
-          <li><a href="login.html">Se connecter</a></li>
-          <li><a href="profil.html">Profil</a></li>
-          <li><a href="game.html">Jeu</a></li>
-        </ul>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <div class="row w-100">
+            <h1 class="mb-0 mx-2 text-black col-5">ENI - <strong>MEMORY</strong> - <span id="nav_page">Accueil</span></h1>
+            <div class="collapse navbar-collapse justify-content-end align-items-center mb-0 col-5" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-lg-0  mx-2">
+                <li class="nav-item me-3">
+                  <a class="nav-link text-white" href="index.html">Accueil</a>
+                </li>
+                <li class="nav-item me-3">
+                  <a class="nav-link text-white" href="signin.html">S'inscrire</a></li>
+                <li class="nav-item me-3">
+                  <a class="nav-link text-white" href="login.html">Se connecter</a></li>
+                <li class="nav-item me-3">
+                  <a class="nav-link text-white" href="profil.html">Profil</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link text-white" href="game.html">Jouer</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
 
-    <main>
-      <section>
+    <main class="my-4 mx-auto d-flex justify-content-center">
+      <section class="border border-dark border-2 rounded-4 d-flex flex-column justify-content-center w-50 p-3  text-bg-dark">
         <h2>Bienvenue sur le site du Memory de l'ENI</h2>
         <p>Venez jouer avec nous et faites le meilleurs score possible.</p>
-        <p>Règle du Jeu :</p>
-        <ul>
-          <li>Retourne deux cartes. Si les images sont identiques, le jeu laisse les cartes visibles.</li>
-          <li>Si les images sont différentes, les carte se retournent faces cachées là où elles étaient.</li>
-          <li>La partie est terminée lorsque toutes les cartes ont été assemblées par paires.</li>
-        </ul>
-        <div>
-          <img src="" alt="exemple de plateau de jeux">
+        <div class="m-0">
+          <p class="fs-5 ms-4 fw-bold mb-2">Règle du Jeu :</p>
+          <ul>
+            <li>Retourne deux cartes. Si les images sont identiques, le jeu laisse les cartes visibles.</li>
+            <li>Si les images sont différentes, les carte se retournent faces cachées là où elles étaient.</li>
+            <li>La partie est terminée lorsque toutes les cartes ont été assemblées par paires.</li>
+          </ul>
         </div>
-        <p>Si vous voulez vous souvenir de votre score. Inscrivez-vous via le formulaire. <br><br>
+        <div class="w-50 d-flex justify-content-center mb-3">
+          <img class="rounded img-fluid img-thumbnail" src="assets/memory-legume/memory_detail.png" alt="exemple de plateau de jeux">
+        </div>
+        <p>Si vous voulez vous souvenir de votre score. Inscrivez-vous via le formulaire.<br>
           Le jeu garde les <strong>5 meilleurs</strong> scores.
           Si vous voulez relancer une partie cliquez sur <strong>la barre d'espace</strong>.
         </p>
