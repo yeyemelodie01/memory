@@ -1,0 +1,21 @@
+input {
+
+}
+
+.img-error{
+    background-image: url('../../assets/error.svg');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 99% center;
+}
+
+.img-valid{
+    background-image: url('../../assets/check.svg');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 99% center;
+}
+
+img{
+    width: 12%;
+}

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profil</title>
-    
+
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/components/buttons.css" />
 
@@ -14,83 +14,107 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-</head>
-<body>
-    <header>
+  </head>
+  <body>
+    <header class="my-3">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <div class="row w-100">
-            <h1 class="mb-0 mx-2 text-black col-5">ENI - <strong>MEMORY</strong> - <span id="nav_page">Accueil</span></h1>
-            <div class="collapse navbar-collapse justify-content-end align-items-center mb-0 col-5" id="navbarSupportedContent">
-              <ul class="navbar-nav mb-lg-0  mx-2">
-                <li class="nav-item me-3">
-                  <a class="nav-link text-white" href="index.html">Accueil</a>
-                </li>
-                <li class="nav-item me-3">
-                  <a class="nav-link text-white" href="signin.html">S'inscrire</a></li>
-                <li class="nav-item me-3">
-                  <a class="nav-link text-white" href="login.html">Se connecter</a></li>
-                <li class="nav-item me-3">
-                  <a class="nav-link text-white" href="profil.html">Profil</a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link text-white" href="game.html">Jouer</a>
-                </li>
-              </ul>
-            </div>
+          <div
+            class="collapse navbar-collapse justify-content-end align-items-center mb-0"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mb-lg-0 mx-2">
+              <li class="nav-item me-3">
+                <a class="nav-link fw-bold" href="index.html">Accueil</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link fw-bold" href="signin.html">S'inscrire</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link fw-bold" href="login.html">Se connecter</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link fw-bold" href="profil.html">Profil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="game.html">Jouer</a>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
     </header>
-    
-    <main>
-     <section>
-      <h2>Profil</h2>
-      <img src="" alt="">
-      <div>
-        <form action="" method="post">
-          <label for="user">Nom d'utilisateur</label>
-          <input type="text" name="" id="user">
 
-          <label for="user">Email</label>
-          <input type="text" name="" id="user">
-
-          <div>
-            <label for="memory_image"> Choix du memory
-              <select id="memory_image"></select>
-            </label>
-            <img src="" alt="aperçu memory">
+    <main class="my-4 mx-auto d-flex flex-column justify-content-center">
+      <h1 class="mb-5 mx-2 text-center">
+        ENI - <strong>MEMORY</strong> - <span id="nav_page">Accueil</span>
+      </h1>
+      <section class="w-50 px-5 pb-5 pt-3">
+        <h2 class="text-center mb-4">Profil</h2>
+        <div class="d-flex justify-content-center mb-4">
+          <img src="assets/question.svg" alt="icon user" class="img-user rounded-circle bg-dark p-2"/>
+        </div>
+        <form action="Post" class="mx-0 mt-0 mb-4 d-flex flex-column align-items-center">
+          <div class="d-flex flex-column w-100 mb-3">
+            <label for="user" class="ms-0 mb-2 fs-5">Nom d'utilisateur</label>
+            <input type="text" name="" id="user" class="pb-2 form-control" />
           </div>
-            <label for="memory_size"> Taille du memory
-              <select id="memory_size"></select>
+          <div class="d-flex flex-column w-100 mb-3">
+            <label for="user" class="ms-0 mb-2 fs-5">Email</label>
+            <input type="text" name="" id="user" class="pb-2 form-control" />
+          </div>
+          <div class="d-flex my-3">
+            <label for="memory_image" class="ms-0 mb-2 fs-5">gi
+              Choix du memory
+              <select
+                id="memory_image"
+                class="form-select"
+                aria-label="Default select example"
+              >
+                <option selected value="1">Alphabet-scrabble</option>
+                <option value="2">Animaux</option>
+                <option value="3">Animaux animés</option>
+                <option value="4">Animaux domestiques</option>
+                <option value="5">Chiens</option>
+                <option value="6">Dinosaures</option>
+                <option value="7">Dinosaures avec nom</option>
+                <option value="8">Légumes</option>
+              </select>
             </label>
-          <button type="submit">Enregistrez Option</button>
+            <div class="w-50 d-flex justify-content-center mt-4 mb-4">
+              <img
+                class="rounded img-fluid img-thumbnail"
+                src="assets/alphabet-scrabble/memory_detail_scrabble.png"
+                alt="aperçu memory"
+              />
+            </div>
+          </div>
+          <button type="submit" class="btn-form fw-bold">Enregistrez Option</button>
         </form>
-      </div>
-      <div>
-        <h2>Derniers Scores :</h2>
-        <table aria-describedby="">
-          <thead>
-            <tr>
-              <th>Pseudo</th>
-              <th>Score</th>
-              <th>Taille</th>
-              <th>Choix Memory</th>
-              <th>Date</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>dd@dd.fr</td>
-              <td>11</td>
-              <td>4par3</td>
-              <td>Légumes</td>
-              <td>14/12/2022</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-     </section>   
+        <div>
+          <h2>Derniers Scores :</h2>
+          <table class="table table-striped-columns table-bordered border-dark border-2" aria-describedby="">
+            <thead>
+              <tr>
+                <th scope="col">Pseudo</th>
+                <th scope="col">Score</th>
+                <th scope="col">Taille</th>
+                <th scope="col">Choix Memory</th>
+                <th scope="col">Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>dd@dd.fr</td>
+                <td>11</td>
+                <td>4par3</td>
+                <td>Légumes</td>
+                <td>14/12/2022</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
     </main>
 
     <script
@@ -98,6 +122,6 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script  type="module" src="js/app.js"></script>
-</body>
+    <script type="module" src="js/app.js"></script>
+  </body>
 </html>

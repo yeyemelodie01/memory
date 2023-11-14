@@ -1,8 +1,20 @@
 /* HEADER */
 nav li{
-    border: 1px solid #000;
-    background: #000;
+    border: 2px solid #ff8e3c;
+    background: transparent;
     border-radius: 3px;
-    color: #FFF;
+    color: #0d0d0d;
     padding: 0 12px;
+}
+
+nav li:hover{
+    background: #ff8e3c;
+}
+
+.btn-form{
+    border: 2px solid #ff8e3c;
+    border-radius: 3px;
+    padding: 5px 12px;
+    background: #ff8e3c;
+    color: #fffffe;
 }
