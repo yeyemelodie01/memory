@@ -13,12 +13,51 @@ body{
   color: #2a2a2a;
 }
 
-main{
-  
-}
 
 section{
   box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
   border-radius: 50px;
   background: #eff0f3;
+}
+
+/* GAME */
+#div_memory div{
+  width: 200px;
+  height: 200px;
+}
+.div1{
+  background-color:aqua;
+}
+.div2{
+  background-color:blue;
+}
+.div3{
+  background-color:brown;
+}
+.div4{
+  background-color:chartreuse;
+}
+.div5{
+  background-color: crimson;
+}
+.div6{
+  background-color:darkgoldenrod ;
+}
+.div7{
+  background-color: fuchsia;
+}
+.div8{
+  background-color: mediumorchid ;
+} 
+.div9{
+  background-color: lightskyblue ;
+}
+.div10{
+  background-color:mintcream ;
+}
+.div11{
+  background-color: rgb(159, 98, 199);
+}
+.div12{
+  background-color:rgb(48, 150, 99) ;
 }
